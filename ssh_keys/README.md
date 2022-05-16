@@ -1,0 +1,1 @@
+A straightforward util to automate generation of ssh keys on a new machine
