@@ -24,7 +24,11 @@ apt update
 
 apt install -y code
 
-apt install -y xpad terminator git htop virtualbox tmux gnome-sushi
+# C++, version-control and build systems
+apt install -y git build-essential cmake cppcheck clang-format clang-tidy clangd
+
+# General programs that make life easier
+apt install -y xpad terminator htop virtualbox tmux gnome-sushi
 
 su - "$USR" -c "code --install-extension ms-azuretools.vscode-docker"
 su - "$USR" -c "code --install-extension ms-iot.vscode-ros"
@@ -35,6 +39,8 @@ su - "$USR" -c "code --install-extension ms-toolsai.jupyter-keymap"
 su - "$USR" -c "code --install-extension ms-toolsai.jupyter-renderers"
 su - "$USR" -c "code --install-extension ms-vscode-remote.remote-containers"
 su - "$USR" -c "code --install-extension ms-vscode.cmake-tools"
+su - "$USR" -c "code --install-extension llvm-vs-code-extensions.vscode-clangd"
+su - "$USR" -c "code --install-extension cheshirekow.cmake-format"
 su - "$USR" -c "code --install-extension ms-vscode.cpptools"
 su - "$USR" -c "code --install-extension tomoki1207.pdf"
 su - "$USR" -c "code --install-extension twxs.cmake"
